@@ -2,14 +2,18 @@ import styled from 'styled-components';
 import HeaderFeature from './HeaderFeature';
 
 const Header = styled(HeaderFeature)`
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
   display: flex;
   height: 40px;
   background-color: rgba(0, 0, 0, 0.32);
   align-items: center;
   justify-content: space-between;
-  position: relative;
   padding: 4px;
   box-sizing: border-box;
+  z-index: 99999;
 
   .header_inner {
     width: 100%;
